@@ -17,15 +17,16 @@ body{
     background-color: #F4FEFF;
     overflow-x: hidden;
 }
-header{
+.navbar{
     padding: 50px;
     font-size: 23px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
     background-color: #F4FEFF;
     z-index: 1000;
-    min-width: 100vw;
+    width: 100%;
 }
 nav img{
     width: 40px;
@@ -94,12 +95,14 @@ nav span{
 }
 #about{
     height: 100vh;
+    width: 100%;
 }
 
 .container-about{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 150px 30px;
+    margin: 200px 30px;
 }
 .row-1{
     display: flex;
@@ -170,6 +173,7 @@ nav span{
 }
 .container-tujuan{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -204,6 +208,7 @@ nav span{
 .container-penyakit{
     margin: 100px 300px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     gap: 100px;
@@ -391,8 +396,9 @@ footer{
 }
 
 @media screen and (max-width:1150px){
-    header{
+    .navbar{
         padding: 35px;
+        width: 100%;
     }
     body{
         overflow-x: hidden;
@@ -526,6 +532,10 @@ footer{
 
 
 @media screen and (max-width: 768px) {
+    .navbar{
+        width: 100%;
+    }
+    .register,
     nav ul li{
         display: none;
     }
@@ -533,27 +543,25 @@ footer{
         overflow-x: hidden;
     }
 
-    .register{
+    /* .register{
     display: none;
-    }
+    } */
     nav img{
         display: block;
     }
     .container-about{
-        flex-direction: column;
         align-items: center;
+        justify-content: center;
         margin: 100px 0;
         gap: 100px;
     }
     .container-tujuan{
-        flex-direction: column;
         gap: 50px;
         align-items: center;
         text-align: center;
         justify-content: center ;
     }
     .container-penyakit{
-        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
@@ -651,6 +659,9 @@ footer{
 }
 
 @media screen and (max-width:576px) {
+    .navbar{
+        width: 100%;
+    }
     .row-3 p{
         font-size: 15px;
         max-width: 400px;
@@ -660,11 +671,24 @@ footer{
     }
     body{
         overflow-x: hidden;
+        min-width: 100vw;
+    }
+    .container-hypnoteraphy{
+        /* padding: 50px 50px; */
+        margin: 100px 30px;
+        gap: 20px;
     }
 
 }
 
 @media screen and (max-width:375px) {
+    .navbar{
+        width: 100%;
+    }
+    body{
+        min-width: 100vw;
+        overflow-x: hidden;
+    }
     .container-hypnoteraphy{
         /* padding: 50px 50px; */
         margin: 100px 30px;
@@ -701,6 +725,9 @@ footer{
     }
 }
 @media screen and (max-width:320px) {
+    .navbar{
+        width: 100%;
+    }
     .container-hypnoteraphy{
         /* padding: 50px 50px; */
         margin: 100px 30px;
@@ -709,7 +736,6 @@ footer{
     body{
         overflow-x: hidden;
     }
-
     .container-hypnoteraphy h1{
         font-size: 20px;
     }
