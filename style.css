@@ -27,6 +27,7 @@ body{
     background-color: #F4FEFF;
     z-index: 1000;
     width: 100%;
+    margin-bottom: 200px;
 }
 nav img{
     width: 40px;
@@ -102,7 +103,7 @@ nav span{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 200px 30px;
+    margin: 250px 50px 30px 30px;
 }
 .row-1{
     display: flex;
@@ -552,7 +553,7 @@ footer{
     .container-about{
         align-items: center;
         justify-content: center;
-        margin: 100px 0;
+        margin: 200px 0;
         gap: 100px;
     }
     .container-tujuan{
