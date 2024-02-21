@@ -1,0 +1,696 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+body{
+    background-color: #F4FEFF;
+    overflow-x: hidden;
+    width: 100vw;
+}
+header{
+    padding: 50px;
+    font-size: 23px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    background-color: #F4FEFF;
+    z-index: 1000;
+    width: 100vw;
+}
+nav img{
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+nav ul li{
+    color: #a0a0a0;
+}
+
+
+nav ul li:hover{
+    color: #56E0E0;
+}
+
+
+.logo{
+    color: #172048;
+}
+.logo:hover{
+    color: #56E0E0;
+}
+nav span{
+    font-weight: 600;
+}
+
+.cv,
+.get-started,
+.register{
+    cursor: pointer;
+    background: linear-gradient(to bottom right, #56E0E0, #007299);
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 2rem;
+    font-size: 15px;
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.2));
+    /* transition: all 0.5s ease; */
+}
+
+.get-started{
+    padding: 20px 30px;
+
+}
+
+.register:hover{
+    background: linear-gradient(to top left, #56E0E0, #007299);
+    /* filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5)); */
+}
+
+.get-started:hover{
+    background: linear-gradient(to top left, #56E0E0, #007299);
+    /* filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5)); */
+}
+#about{
+    height: 100vh;
+}
+
+.container-about{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 150px 30px;
+}
+.row-1{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.row-1 h1{
+    font-size: 50px;
+    background-image: linear-gradient(to bottom right, #56E0E0, #007299);
+    color: transparent;
+    display: inline-block;
+    background-clip: text;
+}
+
+.cv{
+    max-width: 150px;
+    text-align: center;
+}
+.cv:hover{
+    background: linear-gradient(to top left, #56E0E0, #007299);
+    /* filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5)); */
+}
+.name-card{
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.row-1 p{
+    max-width: 500px;
+}
+#hypnoteraphy{
+    height: 100vh;
+}
+.container-hypnoteraphy{
+    /* position: static; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.2));
+    background-color: white;
+    margin: 100px 300px;
+    padding: 100px;
+    border-radius: 1rem;
+}
+
+
+.container-hypnoteraphy p{
+    color: #a0a0a0;
+    max-width: 900px;
+}
+
+.container-hypnoteraphy h1{
+    font-size: 50px;
+    color: #172048;
+}
+.container-hypnoteraphy h1 span{
+    background-image: linear-gradient(to bottom right, #56E0E0, #007299);
+    color: transparent;
+    display: inline-block;
+    background-clip: text;
+}
+
+#tujuan{
+    height: 100vh;
+}
+.container-tujuan{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.row-3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.row-3 span{
+    background-image: linear-gradient(to bottom right, #56E0E0, #007299);
+    color: transparent;
+    display: inline-block;
+    background-clip: text;
+
+}
+.row-3 p{
+    max-width: 500px;
+    line-height: 2;
+}
+.row-3 h1{
+    font-size: 50px;
+    color: #172048;
+}
+.row-4 img{
+    width: 600px;
+}
+
+#penyakit{
+    height: 100vh;
+}
+
+.container-penyakit{
+    margin: 100px 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+.list-penyakit{
+    display: flex;
+    gap: 130px;
+}
+.row-5{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.row-5 h1{
+    font-size: 50px;
+    color: #172048;
+}
+.row-5 p{
+    max-width: 400px;
+}
+.row-5 h1 span{
+    background-image: linear-gradient(to bottom right, #56E0E0, #007299);
+    color: transparent;
+    display: inline-block;
+    background-clip: text;
+
+}
+.row-6 h1{
+    font-size: 50px;
+    color: #172048;
+}
+.row-6 p{
+    max-width: 500px;
+    line-height: 2;
+}
+.row-penyakit-1 ul li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.row-penyakit-1 ul{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 20px;
+}
+.row-penyakit-2 ul li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.row-penyakit-2 ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#feedback{
+    height: 100vh;
+}
+.container-feedback{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+.row-7 h1{
+    font-size: 50px;
+    background-image: linear-gradient(to bottom right, #56E0E0, #007299);
+    color: transparent;
+    display: inline-block;
+    background-clip: text;
+}
+.row-8{
+    display: flex;
+    gap: 50px;
+}
+.profil-pasien img{
+    max-width: 70px;
+    max-height: 70px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.feedback-card{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: white;
+    outline: 3px solid #DEDEDE;
+    padding: 50px;
+    border-radius: 5px;
+}
+.feedback-card p{
+    max-width: 300px;
+}
+.profil-pasien{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.profil-pasien span{
+    font-size: 20px;
+    font-weight: 600;
+}
+footer{
+    /* height: 30vh; */
+    background-color: white;
+    outline: 3px solid #DEDEDE;
+}
+.container-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 70px 10px;
+}
+.footer-card img{
+    max-width: 50px;
+    max-width: 50px;
+}
+.footer-card span{
+    color: #172048;
+}
+.footer-card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+#kontak{
+    height: 100vh;
+    background-color: white;
+    margin: 50px 0;
+}
+.container-kontak{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    gap: 70px;
+    text-align: center;
+    line-height: 3;
+}
+.container-kontak h1{
+    line-height: normal;
+    font-size: 50px;
+    font-size: 50px;
+    background-image: linear-gradient(to bottom right, #56E0E0, #007299);
+    color: transparent;
+    display: inline-block;
+    background-clip: text;
+
+}
+.container-kontak h2{
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+.kontak-card{
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: -50px; */
+    gap: 200px;
+}
+.quotes > p:nth-child(1){
+    font-size: 30px;
+    color: #172048;
+}
+.quotes > p:nth-child(2){
+    font-size: 20px;
+    color: #737373;
+}
+.quotes p span{
+    font-weight: 600;
+}
+.alamat > p:nth-child(3){
+    max-width: 300px;
+    line-height: normal;
+    margin-top: 13px;
+}
+.alamat{
+    border-left: 2px #737373 solid;
+    border-right: 2px #737373 solid;
+    padding: 0 130px;
+}
+
+@media screen and (max-width:1150px){
+    header{
+        padding: 35px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .container-hypnoteraphy{
+        margin: 80px 250px;
+    }
+    .logo{
+        font-size: 15px;
+    }
+    nav ul li{
+        font-size: 15px;
+    }
+    .register{
+        font-size: 8px;
+        padding: 5px 15px;
+    }
+    .row-1 img{
+        width: 350px;
+    }
+    .row-1 h1{
+        font-size: 30px;
+    }
+    .row-1 p{
+        font-size: 10px;
+        max-width: 300px;
+    }
+    .row-2 img{
+        width: 350px;
+    }
+    .container-about{
+        margin: 0px 30px;
+        margin-top: 150px;
+    }
+    .container-hypnoteraphy{
+        margin: 50px 100px;
+        padding: 50px;
+    }
+    .container-kontak h1{
+        font-size: 30px;
+    }
+    .container-kontak h2{
+        font-size: 15px;
+    }
+    .kontak-card p{
+        font-size: 10px;
+    }
+    .kontak-card{
+        gap: 100px;
+    }
+    .alamat{
+        padding: 0 80px;
+    }
+    .quotes > p:nth-child(1){
+        font-size: 20px;
+        color: #172048;
+    }
+    .quotes > p:nth-child(2){
+        font-size: 15px;
+        color: #737373;
+    }
+    #kontak{
+        height: fit-content;
+    }
+    .row-7 h1{
+        font-size: 30px;
+    }
+    .row-8 p{
+        font-size: 10px;
+    }
+    .row-8 img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .profil-pasien span{
+        font-size: 15px;
+    }
+    .stars img{
+        width: 15px;
+        height: 15px;
+    }
+    .feedback-card p{
+        max-width: 150px;
+    }
+    .row-3 h1{
+        font-size: 30px;
+    }
+    .row-3 p{
+        font-size: 13px;
+        max-width: 300px;
+    }
+    .row-4 img{
+        width: 300px;
+    }
+    .row-5 h1{
+        font-size: 30px;
+    }
+    .row-5 p{
+        font-size: 13px;
+    }
+    .row-5 li{
+        font-size: 13px;
+    }
+    .row-5 img{
+        width: 20px;
+        height: 20px;
+    }
+    .list-penyakit{
+        gap: 40px;
+    }
+    #tujuan,
+    #penyakit{
+        height: fit-content;
+    }
+    .container-penyakit{
+        gap: 100px;
+        margin: 50px 100px;
+    }
+    .row-penyakit-2 li{
+        font-size: 8px;
+    }
+    .row-6 h1{
+        font-size: 30px;
+    }
+    .row-6 p {
+        font-size: 10px;
+        max-width: 400px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    nav ul li{
+        display: none;
+    }
+    .register{
+    display: none;
+    }
+    nav img{
+        display: block;
+    }
+    .container-about{
+        flex-direction: column;
+        align-items: center;
+        margin: 100px 0;
+        gap: 100px;
+    }
+    .container-tujuan{
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        text-align: center;
+        justify-content: center ;
+    }
+    .container-penyakit{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #about{
+        height: fit-content;
+    }
+    .container-hypnoteraphy{
+        margin: 50px 100px;
+        padding: 50px;
+    }
+    .container-hypnoteraphy h1{
+        font-size: 30px;
+    }
+    .container-hypnoteraphy p{
+        font-size: 12px;
+    }
+    .get-started{
+        font-size: 10px;
+        padding: 10px 15px;
+    }
+    #hypnoteraphy{
+        height: fit-content;
+    }
+    #tujuan{
+        height: fit-content;
+    }
+    .row-4 img{
+        width: 400px;
+    }
+    .row-3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+    }
+    .row-3 h1{
+        font-size: 30px;
+    }
+    .row-3 p{
+        font-size: 15px;
+        max-width: 550px;
+    }
+    .container-penyakit{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 100px;
+    }
+    .list-penyakit li{
+        font-size: 15px;
+    }
+    .row-penyakit-2 ul > li:nth-child(4){
+        font-size: 12px;
+    }
+    .row-5 h1{
+        font-size: 30px;
+    }
+    .row-6 h1{
+        font-size: 30px;
+    }
+    .row-6 p{
+        font-size: 15px;
+    }
+    .row-6{
+        width: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #kontak{
+        height: fit-content;
+    }
+    .alamat{
+        padding: 80px 0;
+        border-left: none;
+        border-right: none;
+        border-top: 2px #737373 solid;
+        border-bottom: 2px #737373 solid;
+    }
+    #penyakit{
+        height: fit-content;
+    }
+    .kontak-card{
+        flex-direction: column;
+    }
+    .row-8{
+        flex-flow: row wrap;
+        justify-content:center ;
+    }
+    #feedback{
+        height: fit-content;
+        margin: 50px 0;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .row-3 p{
+        font-size: 15px;
+        max-width: 400px;
+    }
+    .feedback-card{
+        padding: 30px;
+    }
+
+}
+
+@media screen and (max-width:375px) {
+    .container-hypnoteraphy{
+        /* padding: 50px 50px; */
+        margin: 100px 30px;
+        gap: 20px;
+    }
+    .container-hypnoteraphy h1{
+        font-size: 20px;
+    }
+    .container-hypnoteraphy p{
+        font-size: 7px;
+    }
+    #tujuan{
+        margin: 100px;
+    }
+    .row-3 h1{
+        font-size: 20px;
+    }
+    .row-3 p{
+        font-size: 10px;
+        max-width: 250px;
+    }
+    .row-4 img{
+        width: 200px;
+    }
+    .row-5 h1{
+        font-size: 20px;
+    }
+    .row-6 h1{
+        font-size: 20px;
+    }
+    .row-6 p{
+        font-size: 10px;
+        max-width: 300px;
+    }
+}
