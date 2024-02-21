@@ -136,7 +136,7 @@ nav span{
     max-width: 500px;
 }
 #hypnoteraphy{
-    height: 100vh;
+    height: 80vh;
 }
 .container-hypnoteraphy{
     /* position: static; */
@@ -203,7 +203,7 @@ nav span{
 }
 
 #penyakit{
-    height: 100vh;
+    height: 80vh;
 }
 
 .container-penyakit{
@@ -616,7 +616,7 @@ footer{
         font-size: 15px;
     }
     .row-penyakit-2 ul > li:nth-child(4){
-        font-size: 12px;
+        font-size: 7px;
     }
     .row-5 h1{
         font-size: 30px;
@@ -625,7 +625,7 @@ footer{
         font-size: 30px;
     }
     .row-6 p{
-        font-size: 15px;
+        font-size: 10px;
     }
     .row-6{
         width: 100vh;
@@ -657,6 +657,12 @@ footer{
         height: fit-content;
         margin: 50px 0;
     }
+    .kontak-card h2{
+        font-size: 30px;
+    }
+    .kontak-card p{
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width:576px) {
@@ -664,8 +670,8 @@ footer{
         width: 100%;
     }
     .row-3 p{
-        font-size: 15px;
-        max-width: 400px;
+        font-size: 11px;
+        max-width: 300px;
     }
     .feedback-card{
         padding: 30px;
@@ -679,7 +685,9 @@ footer{
         margin: 100px 30px;
         gap: 20px;
     }
-
+    .row-penyakit-2 li{
+        font-size: 7.5px;
+    }
 }
 
 @media screen and (max-width:375px) {
