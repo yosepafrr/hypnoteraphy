@@ -10,14 +10,12 @@ html{
     text-decoration: none;
     outline: none;
     list-style-type: none;
-    font-family: "Poppins", sans-serif;
-    
+    font-family: "Poppins", sans-serif;    
 }
 
 body{
     background-color: #F4FEFF;
     overflow-x: hidden;
-    width: 100vw;
 }
 header{
     padding: 50px;
@@ -27,7 +25,7 @@ header{
     top: 0;
     background-color: #F4FEFF;
     z-index: 1000;
-    width: 100vw;
+    min-width: 100vw;
 }
 nav img{
     width: 40px;
@@ -531,6 +529,10 @@ footer{
     nav ul li{
         display: none;
     }
+    body{
+        overflow-x: hidden;
+    }
+
     .register{
     display: none;
     }
@@ -656,6 +658,9 @@ footer{
     .feedback-card{
         padding: 30px;
     }
+    body{
+        overflow-x: hidden;
+    }
 
 }
 
@@ -701,6 +706,10 @@ footer{
         margin: 100px 30px;
         gap: 20px;
     }
+    body{
+        overflow-x: hidden;
+    }
+
     .container-hypnoteraphy h1{
         font-size: 20px;
     }
