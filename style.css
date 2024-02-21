@@ -314,6 +314,7 @@ footer{
     /* height: 30vh; */
     background-color: white;
     outline: 3px solid #DEDEDE;
+    width: 100vw;
 }
 .container-footer{
     display: flex;
@@ -659,6 +660,42 @@ footer{
 }
 
 @media screen and (max-width:375px) {
+    .container-hypnoteraphy{
+        /* padding: 50px 50px; */
+        margin: 100px 30px;
+        gap: 20px;
+    }
+    .container-hypnoteraphy h1{
+        font-size: 20px;
+    }
+    .container-hypnoteraphy p{
+        font-size: 7px;
+    }
+    #tujuan{
+        margin: 100px;
+    }
+    .row-3 h1{
+        font-size: 20px;
+    }
+    .row-3 p{
+        font-size: 10px;
+        max-width: 250px;
+    }
+    .row-4 img{
+        width: 200px;
+    }
+    .row-5 h1{
+        font-size: 20px;
+    }
+    .row-6 h1{
+        font-size: 20px;
+    }
+    .row-6 p{
+        font-size: 10px;
+        max-width: 300px;
+    }
+}
+@media screen and (max-width:320px) {
     .container-hypnoteraphy{
         /* padding: 50px 50px; */
         margin: 100px 30px;
