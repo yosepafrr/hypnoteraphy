@@ -536,8 +536,33 @@ footer{
     .navbar{
         width: 100%;
     }
-    .register,
-    nav ul li{
+    nav ul.show-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 110px;
+        left: 300px;
+        max-width: 300px;
+        padding: 10%;
+        background-color: white;
+        z-index: 1;
+        transition: all 0.5s ease;
+    }
+    nav ul{
+        display: none;
+        flex-direction: column; 
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        z-index: 1;    
+    }
+    #hamburger{
+        cursor: pointer;
+    }
+    .register{
         display: none;
     }
     body{
