@@ -542,12 +542,16 @@ footer{
         align-items: center;
         position: absolute;
         top: 110px;
-        left: 300px;
+        left: 50px;
         max-width: 300px;
         padding: 10%;
         background-color: white;
         z-index: 1;
         transition: all 0.5s ease;
+    }
+    nav{
+        width: 100%;
+        gap: 150px;
     }
     nav ul{
         display: none;
@@ -701,6 +705,9 @@ footer{
     .feedback-card{
         padding: 30px;
     }
+    nav {
+        gap: 100px;
+    }
     body{
         overflow-x: hidden;
         min-width: 100vw;
@@ -722,6 +729,9 @@ footer{
     body{
         min-width: 100vw;
         overflow-x: hidden;
+    }
+    nav{
+        gap: 50px;
     }
     .container-hypnoteraphy{
         /* padding: 50px 50px; */
