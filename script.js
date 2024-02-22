@@ -8,9 +8,29 @@ document.addEventListener("DOMContentLoaded", function () {
         menu.classList.toggle('show-menu');
     })
 
-    nav.querySelectorAll('ul li a').forEach(item => {
+    nav.querySelectorAll('ul a').forEach(item => {
         item.addEventListener('click', function () {
             menu.classList.remove('show-menu');
         })
     })
 });
+
+// TRANSITION IN SECTION
+function reveal(){
+    var reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length ; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add('active');
+        } else {
+            reveals[i].classList.remove('active ');
+        }
+    }
+}
+
+window.addEventListener('scroll', reveal);
+// TRANSITION IN SECTION
